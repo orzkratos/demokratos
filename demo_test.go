@@ -99,7 +99,7 @@ func TestShow2Changes(t *testing.T) {
 func comparePath(t *testing.T, path0 string, path1 string) {
 	t.Log("path0:", path0)
 	t.Log("path1:", path1)
-	output, err := osexec.NewOsCommand().WithDebugMode(osexec.SHOW_COMMAND).WithExpectExit(1, "DIFFERENCES FOUND").
+	output, err := osexec.NewCommandConfig().WithDebugMode(osexec.SHOW_COMMAND).WithExpectExit(1, "DIFFERENCES FOUND").
 		Exec(
 			"diff",
 			"-ruN",
@@ -211,7 +211,7 @@ func TestShow2ReadableDiff(t *testing.T) {
 // - 红色显示删除的代码行，绿色显示新增的代码行
 // - 每个文件显示统计信息：文件名 (+新增行数 -删除行数)
 func showReadableDiff(t *testing.T, path0, path1 string) {
-	output, err := osexec.NewOsCommand().WithExpectExit(1, "DIFFERENCES FOUND").
+	output, err := osexec.NewCommandConfig().WithExpectExit(1, "DIFFERENCES FOUND").
 		Exec(
 			"diff",
 			"-ruN",
@@ -340,7 +340,7 @@ func TestGenerate2Changes(t *testing.T) {
 // - 生成 markdown 格式的差异文件
 // - 如果没有差异，生成包含 "No changes" 的文件
 func generateChangesFile(t *testing.T, path0, path1, outputPath string) {
-	output, err := osexec.NewOsCommand().WithExpectExit(1, "DIFFERENCES FOUND").
+	output, err := osexec.NewCommandConfig().WithExpectExit(1, "DIFFERENCES FOUND").
 		Exec(
 			"diff",
 			"-ruN",

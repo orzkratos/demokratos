@@ -3,13 +3,13 @@ module github.com/orzkratos/demokratos
 go 1.25.0
 
 require (
-	github.com/orzkratos/demokratos/demo1kratos v0.0.13
-	github.com/orzkratos/demokratos/demo2kratos v0.0.13
+	github.com/orzkratos/demokratos/demo1kratos v0.0.14
+	github.com/orzkratos/demokratos/demo2kratos v0.0.14
 	github.com/stretchr/testify v1.11.1
 	github.com/yyle88/eroticgo v0.0.5
 	github.com/yyle88/must v0.0.29
-	github.com/yyle88/osexec v0.0.37
-	github.com/yyle88/osexistpath v0.0.18
+	github.com/yyle88/osexec v0.0.38
+	github.com/yyle88/osexistpath v0.0.19
 	github.com/yyle88/printgo v1.0.6
 	github.com/yyle88/rese v0.0.12
 	github.com/yyle88/runpath v1.0.25
@@ -25,7 +25,7 @@ require (
 	github.com/yyle88/sure v0.0.42 // indirect
 	github.com/yyle88/syntaxgo v0.0.54 // indirect
 	github.com/yyle88/tern v0.0.10 // indirect
-	github.com/yyle88/zaplog v0.0.27 // indirect
+	github.com/yyle88/zaplog v0.0.28 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
