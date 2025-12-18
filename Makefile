@@ -265,17 +265,23 @@ merge-step6:
 
 merge-step7:
 	# 升级所有项目的依赖包到最新版本
-	# depbump: 完整升级根目录依赖
-	# depbump update -D: 升级直接依赖（-D 是默认的，优先用 depbump，出错时才用 depbump update -D）
-	depbump || depbump update -D
-	# 在项目根目录里进第1个项目，优先尝试完整升级，失败则使用仅直接依赖升级
-	cd demo1kratos && (depbump || depbump update -D)
-	# 在项目根目录里进第2个项目，优先尝试完整升级，失败则使用仅直接依赖升级
-	cd demo2kratos && (depbump || depbump update -D)
+	# 优先尝试 depbump -R 升级所有模块，失败则逐个升级
+	@if depbump -R; then \
+		echo "✅ depbump -R 已经成功升级所有模块"; \
+	else \
+		echo "⚠️ depbump -R 执行失败，改用逐个模块升级"; \
+		echo "# depbump: 完整升级根目录依赖"; \
+		echo "# depbump update -D: 升级直接依赖（-D 是默认的，优先用 depbump，出错时才用 depbump update -D）"; \
+		depbump || depbump update -D; \
+		echo "# 在项目根目录里进第1个项目，优先尝试完整升级，失败则使用仅直接依赖升级"; \
+		cd demo1kratos && (depbump || depbump update -D); \
+		echo "# 在项目根目录里进第2个项目，优先尝试完整升级，失败则使用仅直接依赖升级"; \
+		cd demo2kratos && (depbump || depbump update -D); \
+	fi
 	@echo "✅ 已升级所有依赖包"
 	# 【备注】标准升级命令（使用 go get -u）：
-	# depbump module: 使用 go get -u ./... 升级当前模块依赖
-	# depbump module -R: 在工作区所有模块中使用 go get -u ./... 升级依赖
+	# depbump: 使用 go get -u ./... 升级当前模块依赖
+	# depbump -R: 在工作区所有模块中使用 go get -u ./... 升级依赖
 	# 【备注】智能升级命令（带 Go 版本兼容性检查，防止工具链传染）：
 	# depbump bump: 智能升级直接依赖（等同于 depbump bump -D）
 	# depbump bump -E: 智能升级所有依赖（直接+间接）

@@ -16,6 +16,7 @@
 ## 英文文档
 
 [ENGLISH README](README.md)
+
 <!-- TEMPLATE (ZH) END: LANGUAGE NAVIGATION -->
 
 ## 项目简介
@@ -119,11 +120,12 @@ go test -v -run TestGenerateXChanges # 生成 demos-toolchain-trees.md
 
 ## Fork 项目列表
 
-|     演示      |                          仓库                          |
-|:-----------:|:----------------------------------------------------:|
+|    演示     |                         仓库                         |
+| :---------: | :--------------------------------------------------: |
 |   ast-go    |     https://github.com/orzkratos/astkratos-demos     |
 |    auth     |    https://github.com/orzkratos/authkratos-demos     |
 |   config    |   https://github.com/orzkratos/configkratos-demos    |
+|    cron     |    https://github.com/orzkratos/cronkratos-demos     |
 |  ebz-must   |     https://github.com/orzkratos/ebzkratos-demos     |
 | spf13/cobra |    https://github.com/orzkratos/cobrakratos-demos    |
 |    gorm     |    https://github.com/orzkratos/gormkratos-demos     |

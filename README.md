@@ -16,6 +16,7 @@ Demo projects built with the Go-Kratos framework, serving as the foundation of t
 ## CHINESE README
 
 [中文说明](README.zh.md)
+
 <!-- TEMPLATE (EN) END: LANGUAGE NAVIGATION -->
 
 ## Introduction
@@ -120,10 +121,11 @@ go test -v -run TestGenerateXChanges # Generate demos-toolchain-trees.md
 ## Forks
 
 |    demo     |                         repo                         |
-|:-----------:|:----------------------------------------------------:|
+| :---------: | :--------------------------------------------------: |
 |   ast-go    |     https://github.com/orzkratos/astkratos-demos     |
 |    auth     |    https://github.com/orzkratos/authkratos-demos     |
 |   config    |   https://github.com/orzkratos/configkratos-demos    |
+|    cron     |    https://github.com/orzkratos/cronkratos-demos     |
 |  ebz-must   |     https://github.com/orzkratos/ebzkratos-demos     |
 | spf13/cobra |    https://github.com/orzkratos/cobrakratos-demos    |
 |    gorm     |    https://github.com/orzkratos/gormkratos-demos     |

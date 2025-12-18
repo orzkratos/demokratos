@@ -6,7 +6,7 @@ require (
 	github.com/go-kratos/kratos/v2 v2.9.2
 	github.com/google/wire v0.7.0
 	github.com/yyle88/done v1.0.28
-	github.com/yyle88/must v0.0.29
+	github.com/yyle88/must v0.0.30
 	github.com/yyle88/rese v0.0.12
 	github.com/yyle88/runpath v1.0.25
 	google.golang.org/genproto/googleapis/api v0.0.0-20251213004720-97cd9d5aeac2

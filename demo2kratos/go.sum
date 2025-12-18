@@ -54,8 +54,8 @@ github.com/stretchr/testify v1.11.1 h1:7s2iGBzp5EwR7/aIZr8ao5+dra3wiQyKjjFuvgVKu
 github.com/stretchr/testify v1.11.1/go.mod h1:wZwfW3scLgRK+23gO65QZefKpKQRnfz6sD981Nm4B6U=
 github.com/yyle88/done v1.0.28 h1:ZlC5ENTHAR0CQm19t1WhpbtKsKNPwsrXRtDewFsq4HA=
 github.com/yyle88/done v1.0.28/go.mod h1:dc0SzvQkX4NLEIz2shgYvETprQ6c0VZb+DCDtIi9n2Q=
-github.com/yyle88/must v0.0.29 h1:hEcuuWSkpFB97gkcrXHSfjxGSkYiv8J6wy18yWAUuyw=
-github.com/yyle88/must v0.0.29/go.mod h1:zdbS6m5NzOhEqsO45wOaxDdQsh5YT3Tyz0DlY4rBpko=
+github.com/yyle88/must v0.0.30 h1:TolfcJTecHI8+STrM7T2me65gvyu0A5aIxVsL/dFOdo=
+github.com/yyle88/must v0.0.30/go.mod h1:rVw7mLTPD5YlcTTXABIAch4E/znpgDKkjSZpaFL8KnQ=
 github.com/yyle88/mutexmap v1.0.15 h1:vqwtvomfzddcuBNg8hofWnILRFK2STJhWU7AufuNS50=
 github.com/yyle88/mutexmap v1.0.15/go.mod h1:NqwsKlK+NkL18i4BepeyCgtenXuw4N5UUnEX9XBfPA8=
 github.com/yyle88/rese v0.0.12 h1:3cbPm5XmqPiRK2yj+nAUl50ci+9t8pEYOAVp+cKOX8w=
